@@ -1,6 +1,6 @@
 <header>
     <div class="container">
-        <div class="row">
+        <div class="row header-row">
             <div class="col-3 py-3">
                 <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="DC comics logo">
             </div>

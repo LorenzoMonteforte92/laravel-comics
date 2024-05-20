@@ -15,8 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $comics = config('comics');
+    $mainNavLinks = config('mainNavLinks');
     $data = [
         'comics' => $comics,
+        'mainNavLinks' => $mainNavLinks,
+        
         'navLinks' => [
             'CHARACTERS',
             'COMICS',
@@ -29,7 +32,6 @@ Route::get('/', function () {
             'NEWS',
             'SHOP'
         ]
-
     ];
     return view('home', $data);
 }) -> name('home');

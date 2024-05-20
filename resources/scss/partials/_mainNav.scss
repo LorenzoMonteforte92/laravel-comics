@@ -1,0 +1,17 @@
+@use './variables' as *;
+
+
+.main-nav-section{
+    background-color: $brand-primary-color;
+    img{
+        width: 20%;
+        height: 20%;
+    }
+
+    p{
+        color: white;
+    }
+}
+
+
+

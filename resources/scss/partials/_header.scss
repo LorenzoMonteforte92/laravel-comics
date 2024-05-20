@@ -1,12 +1,13 @@
 @use './variables' as *;
 
-a {
-    color: $brand-secondary-color;
-}
 
-.row{
+
+.header-row{
     margin-top: 5px;
     margin-bottom: 5px;
+    a {
+        color: $brand-secondary-color;
+    }
 }
 
 .active-element{
