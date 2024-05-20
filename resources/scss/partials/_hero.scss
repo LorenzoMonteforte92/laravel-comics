@@ -23,15 +23,15 @@ button{
     color: white;
 }
 
-.card{
-    background-color: transparent;
-    border: none;
+.ms-card{
+    background-color: transparent!important;
+    border: none !important;
 }
 
 img{
     height: 100%;
     object-fit: cover;
 }
-// .ms-card-img{
-//     height: 80%
-// }
+.ms-card-img{
+    height: 80%
+}
