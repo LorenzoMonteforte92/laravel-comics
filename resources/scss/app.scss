@@ -1,0 +1,12 @@
+@use './partials/header';
+@use './partials/variables' as *;
+
+@import '~bootstrap/scss/bootstrap';
+
+ul{
+    list-style-type: none;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}

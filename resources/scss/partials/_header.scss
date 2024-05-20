@@ -1,0 +1,23 @@
+@use './variables' as *;
+
+a {
+    color: $brand-secondary-color;
+}
+
+.row{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.active-element{
+    
+    border-bottom: solid 5px #0282F9;
+    margin-bottom: -5px;
+        a{
+            color: #0282F9;
+        }
+}
+
+.ms-padding{
+    padding-bottom: 6%;
+}
