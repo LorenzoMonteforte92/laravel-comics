@@ -5,9 +5,9 @@
                 <ul class="d-flex justify-content-center align-items-center" >
                     @foreach ($mainNavLinks as $links)
                         <li class="d-flex justify-content-center align-items-center">
-                            <div class="d-flex justify-content-center align-items-center gap-3" >
-                                <img src="{{ Vite::asset($links['img']) }}" alt="...">
-                                <p class="text-center pt-3" ></p>
+                            <div class="d-flex justify-content-center align-items-center gap-2" >
+                                <div class="d-flex justify-content-center" ><img src="{{ Vite::asset($links['img']) }}" alt="..."></div>
+                                <p class="text-center pt-3" >{{$links['text']}}</p>
                             </div>
                         </li>
                     @endforeach
