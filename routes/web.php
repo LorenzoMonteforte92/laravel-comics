@@ -31,7 +31,38 @@ Route::get('/', function () {
             'FANS',
             'NEWS',
             'SHOP'
-        ]
+        ],
+
+        'dcComicsLinks' => [
+            'Characters',
+            'Comix',
+            'Movies',
+            'TV',
+            'Games',
+            'Videos',
+            'News',
+        ],
+
+        'dcLinks' => [
+            'Terms Of Use',
+            'Privacy policy (New)',
+            'Ad Choices',
+            'Advertising',
+            'Jobs',
+        ],
+        
+        'siteLinks' => [
+            'Terms Of Use',
+            'Privacy policy (New)',
+            'Ad Choices',
+            'Advertising',
+            'Jobs',
+        ],
+
+        'shopLinks' => [
+            
+        ],
+
     ];
     return view('home', $data);
 }) -> name('home');

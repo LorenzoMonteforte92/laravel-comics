@@ -7,6 +7,6 @@
 {{--/ hero and cards secrions --}}
 
 {{-- main navigation bar --}}
-@include('partials.mainNav')
+    @include('partials.mainNav')
 {{-- /main navigation bar --}}
 @endsection
