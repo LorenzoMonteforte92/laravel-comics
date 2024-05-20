@@ -1,0 +1,15 @@
+@use './variables' as *;
+
+.color-primary{
+    color: $brand-primary-color;
+}
+
+.footer-bottom-section{
+    background-color: $brand-secondary-color;
+}
+
+.footer-button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid $brand-primary-color;
+}
