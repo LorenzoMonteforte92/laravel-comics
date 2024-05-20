@@ -1,0 +1,37 @@
+@use './variables' as *;
+
+.hero{
+    background-image: url('/resources/img/jumbotron.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 320px;
+}
+
+section{
+    background-color: #1C1C1C;
+}
+
+.current-series{
+    background-color: $brand-primary-color;
+    display: inline-block;
+    top: -24px;
+    left: 91px;
+}
+
+button{
+    background-color: $brand-primary-color;
+    color: white;
+}
+
+.card{
+    background-color: transparent;
+    border: none;
+}
+
+img{
+    height: 100%;
+    object-fit: cover;
+}
+// .ms-card-img{
+//     height: 80%
+// }
