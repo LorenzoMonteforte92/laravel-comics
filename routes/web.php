@@ -60,7 +60,11 @@ Route::get('/', function () {
         ],
 
         'shopLinks' => [
-            
+            'Terms Of Use',
+            'Privacy policy (New)',
+            'Ad Choices',
+            'Advertising',
+            'Jobs',
         ],
 
     ];

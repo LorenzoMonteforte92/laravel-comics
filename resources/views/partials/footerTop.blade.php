@@ -15,11 +15,11 @@
                 <div>
                     <h4>SHOP</h4>
                     <ul>
-                        {{-- @foreach ($collection as $item)
+                        @foreach ($dcLinks as $link)
                             <li>
-                                <a href="#">ciao</a>
+                                <a href="#">{{ $link }}</a>
                             </li>
-                        @endforeach --}}
+                        @endforeach
                     </ul>
                 </div>
             </div>
@@ -27,11 +27,11 @@
                 <div>
                     <h4>DC</h4>
                     <ul>
-                        {{-- @foreach ($collection as $item)
+                        @foreach ($siteLinks as $link)
                             <li>
-                                <a href="#">ciao</a>
+                                <a href="#">{{ $link }}</a>
                             </li>
-                        @endforeach --}}
+                        @endforeach
                     </ul>
                 </div>
             </div>
@@ -39,11 +39,11 @@
                 <div>
                     <h4>SITES</h4>
                     <ul>
-                        {{-- @foreach ($collection as $item)
+                        @foreach ($shopLinks as $link)
                             <li>
-                                <a href="#">ciao</a>
+                                <a href="#">{{ $link }}</a>
                             </li>
-                        @endforeach --}}
+                        @endforeach
                     </ul>
                 </div>
             </div>
