@@ -14,6 +14,62 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+
+    $data = [
+        
+        'navLinks' => [
+            'CHARACTERS',
+            'COMICS',
+            'MOVIES',
+            'TV',
+            'GAMES',
+            'COLLECTIBLES',
+            'VIDEOS',
+            'FANS',
+            'NEWS',
+            'SHOP'
+        ],
+
+        'dcComicsLinks' => [
+            'Characters',
+            'Comix',
+            'Movies',
+            'TV',
+            'Games',
+            'Videos',
+            'News',
+        ],
+
+        'dcLinks' => [
+            'Terms Of Use',
+            'Privacy policy (New)',
+            'Ad Choices',
+            'Advertising',
+            'Jobs',
+        ],
+        
+        'siteLinks' => [
+            'Terms Of Use',
+            'Privacy policy (New)',
+            'Ad Choices',
+            'Advertising',
+            'Jobs',
+        ],
+
+        'shopLinks' => [
+            'Terms Of Use',
+            'Privacy policy (New)',
+            'Ad Choices',
+            'Advertising',
+            'Jobs',
+        ],
+
+    ];
+
+    return view('home', $data);
+}) -> name('home');
+
+Route::get('/comics', function () {
     $comics = config('comics');
     $mainNavLinks = config('mainNavLinks');
     $data = [
@@ -68,5 +124,62 @@ Route::get('/', function () {
         ],
 
     ];
-    return view('home', $data);
-}) -> name('home');
+    return view('comics', $data);
+}) -> name('comics');
+
+Route::get('/characters', function () {
+
+    $data = [
+        
+        'navLinks' => [
+            'CHARACTERS',
+            'COMICS',
+            'MOVIES',
+            'TV',
+            'GAMES',
+            'COLLECTIBLES',
+            'VIDEOS',
+            'FANS',
+            'NEWS',
+            'SHOP'
+        ],
+
+        'dcComicsLinks' => [
+            'Characters',
+            'Comix',
+            'Movies',
+            'TV',
+            'Games',
+            'Videos',
+            'News',
+        ],
+
+        'dcLinks' => [
+            'Terms Of Use',
+            'Privacy policy (New)',
+            'Ad Choices',
+            'Advertising',
+            'Jobs',
+        ],
+        
+        'siteLinks' => [
+            'Terms Of Use',
+            'Privacy policy (New)',
+            'Ad Choices',
+            'Advertising',
+            'Jobs',
+        ],
+
+        'shopLinks' => [
+            'Terms Of Use',
+            'Privacy policy (New)',
+            'Ad Choices',
+            'Advertising',
+            'Jobs',
+        ],
+
+    ];
+
+    return view('characters', $data);
+}) -> name('characters');
+
